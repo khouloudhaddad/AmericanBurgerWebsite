@@ -1,0 +1,45 @@
+.main_banner{
+    background-color: var(--primary);
+    padding:7rem 0 0;
+    text-align: center;
+
+    h1{
+        color: var(--light);
+        font-weight: 900;
+        font-size: 6.25rem;
+        line-height: 1.2;
+        margin-bottom: 7rem;
+    }
+
+    h5{
+        color: var(--light);
+        font-size: 2.8rem;
+        font-weight: 400;
+        margin-bottom: 12rem;
+    }   
+}
+
+.bg-bradient-pink{
+        background: var(--primary);
+        background: linear-gradient(180deg, rgba(255,146,146,1) 50%, rgba(255,255,255,1) 50%);
+        margin-top: -2px;
+        img{
+            margin-top: -80px;
+        }
+    }
+
+@media screen and (max-width:991px){
+    
+    .main_banner{
+        padding: 2rem 0 0;
+    
+        h1{
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        h5{
+            font-size: 1.8rem;
+            margin-bottom: 8rem;
+        }
+    }
+}

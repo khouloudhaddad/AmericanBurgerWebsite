@@ -13,6 +13,9 @@ import { ReservationComponent } from './components/homeSections/reservation/rese
 import { AboutComponent } from './components/homeSections/about/about.component';
 import { CreatorsComponent } from './components/homeSections/creators/creators.component';
 import { BlogComponent } from './components/homeSections/blog/blog.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { BlogComponent } from './components/homeSections/blog/blog.component';
     ReservationComponent,
     AboutComponent,
     CreatorsComponent,
-    BlogComponent
+    BlogComponent,
+    HomeComponent,
+    NotFoundComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
