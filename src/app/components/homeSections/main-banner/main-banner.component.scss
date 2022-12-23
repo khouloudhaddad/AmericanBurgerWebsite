@@ -21,7 +21,7 @@
 
 .bg-bradient-pink{
         background: var(--primary);
-        background: linear-gradient(180deg, rgba(255,146,146,1) 50%, rgba(255,255,255,1) 50%);
+        background: linear-gradient(180deg, var(--primary) 50%, #fff9f4 50%);
         margin-top: -2px;
         img{
             margin-top: -80px;
