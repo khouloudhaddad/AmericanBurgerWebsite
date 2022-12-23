@@ -1,7 +1,30 @@
 #menu{
+
+    font-size: 1.363rem;
     .section_heading{
         color: var(--secondary);
         font-size: 9.375rem;
         font-weight: 900;
     }
+    .section_description{
+        font-size: 1.363rem;
+    }
+
+    h3{       
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.333;
+    }
+
+    ul{
+        li{
+            .price{
+                color: var(--primary);
+            }
+        }
+    }
+
+    input[type="radio"] {
+    background-color: #6C757D;
+}
 }
