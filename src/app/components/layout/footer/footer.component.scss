@@ -9,7 +9,7 @@ footer{
              }
         }
         h3{
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             font-weight: 700;
             margin-bottom: 30px;
             color: var(--dark-grey);
@@ -27,5 +27,74 @@ footer{
                 }
             }
         }
+
+        .newsletter{
+            form{
+                display: flex;
+                align-items: center;
+
+                input{
+                    border-radius: 35px;
+                    padding: 7px 20px;
+                    border: 2px solid var(--primary) !important;
+                    background-color: var(--secondary);
+                }
+
+                button:hover, button:focus{
+                    border: 2px solid var(--primary) !important;
+                }
+            }
+        }
+
+        .social_icons{
+            li{
+                margin-right: 15px;
+                background-color: #fff;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;              
+                text-align: center;
+
+                &:hover,&:focus{
+                    transition: all 0.4s;
+                    background-color: var(--primary);
+                }
+                a{
+                    color: var(--secondary);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    &:hover,&:focus{
+                        transition: all 0.4s;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:991px) and (min-width:768px){
+    .footer_top{
+        
+        padding: 30px 40px 30px !important;
+    }
+}
+@media screen and (max-width:767px) {
+    .footer_top{
+        
+        padding: 30px 20px 30px !important;
+         h3{
+            margin-bottom: 20px !important;
+         }
+
+         .newsletter form{
+            flex-direction: column;
+            button{
+                margin-top: 1rem;
+                width: 100%;
+            }
+         }
+
     }
 }

@@ -36,8 +36,7 @@
                     color: var(--primary);
                     margin: 0 5px 0 15px;
                 }
-                flex:1;
-                padding: 0 10px;
+                padding-right: 5px;
                 
             }       
         }
@@ -51,8 +50,18 @@
 @media screen and (max-width:991px) {
     #menu{
     .section_heading{
-            font-size: 5.375rem;
+            font-size: 4.375rem;
         }
     }
     
+}
+
+@media screen and (min-width:992px) {
+     .drinks_list{
+            div{
+                
+                flex:1;
+                
+            }       
+        }
 }

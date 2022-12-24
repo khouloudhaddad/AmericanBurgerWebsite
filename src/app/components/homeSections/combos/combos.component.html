@@ -1,27 +1,35 @@
-<div class="row" id="combos">
+<div class="row position-relative" id="combos">
         <div class="col-12 text-center">
             <h2 class="text-uppercase section_heading">Combos</h2>
         </div>
 
-        <!--cards carousel-->
+        <div class="col-12">
+            <!--cards carousel-->
         <ngx-slick-carousel class="carousel" 
             #slickModal="slick-carousel" 
             [config]="slideConfig" 
             (init)="slickInit($event)"
             (breakpoint)="breakpoint($event)"
            >
-            <div ngxSlickItem *ngFor="let slide of slides; let i=index" class="slide">
-                <div class="card mx-2 text-center">
+            <div ngxSlickItem *ngFor="let slide of slides; let i=index" class="py-5">
+                <div class="card mx-xl-5 mx-md-4 mx-3 text-center">
                 <div class="card-body">
-                    <h5 class="card-title text-uppercase">{{slide.title}}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{slide.product}}</h6>
-                                       
+                    <h5 class="mb-3 card-title text-uppercase">{{slide.title}}</h5>
+                    <h6 class="card-subtitle mb-3 text-muted  text-uppercase py-2">{{slide.product}}</h6>
+                     <div class="components d-flex justify-content-center">
+                        <span  *ngFor="let item of slide.content" class="px-2 text-uppercase">{{item}}</span>
+                     </div>   
+                     <div class="pt-3 text-uppercase">{{slide.output}}</div>  
+                     
+                     <div class="text--primary pt-4">{{slide.price}}</div>
                 </div>
-                <div class="card-footer">
+                
+                <div class="card-footer pt-4 pb-3">
                     <a href="#" class="btn btn-primary" [ngClass]="!isOdd(i)? 'btn-outline': '' ">Card link</a>
                 </div>
                 </div>
             </div>
         </ngx-slick-carousel>
+        </div>
            
 </div>

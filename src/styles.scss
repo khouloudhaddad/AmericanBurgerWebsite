@@ -56,7 +56,13 @@ body{
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(255 146 146 / 25%) !important;
 }
-
+.form-control:focus {
+    color: var(--dark-grey) !important;
+    background-color: transparent !important;
+    border-color: #ff9292 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(255 146 146 / 25%) !important;
+}
 .form-check{
     margin-bottom: 0 !important;
 }
@@ -79,6 +85,7 @@ body{
     font-size: 1.025rem !important;
     transition: all 0.4s;
     text-transform: uppercase;
+    border-width: 2px !important;
 }
 
 .btn-primary:hover,.btn-primary:focus{
@@ -90,4 +97,19 @@ body{
 .btn-outline{
     background-color: transparent !important;
     color: var(--dark-grey) !important;
+    border-width: 2px !important;
+}
+
+.slick-prev:before, .slick-next:before {
+        color: var(--primary);
+        font-size: 2rem;
+    }
+.slick-next {
+    right: 2px;
+    z-index: 10;
+}
+
+.slick-prev {
+    left: 2px;
+    z-index: 10;
 }
