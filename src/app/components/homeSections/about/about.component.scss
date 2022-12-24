@@ -1,0 +1,21 @@
+#about{
+    .dark_lines{
+        top: 70%;
+        z-index: 10;
+    }
+
+    .about_wrapper{
+        z-index: 1000;
+        .about_img{
+            z-index: 100;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    #about{
+        .row{
+            flex-direction: column-reverse;
+        }
+    }
+}

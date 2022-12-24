@@ -44,8 +44,10 @@ form{
         background-color: transparent;
         border-top-right-radius: 35px;
         border-bottom-right-radius: 35px;
-        border: 2px solid #fff;
-        border-left: none;
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        border: none;
         img{
             width: 20px;
         }
@@ -53,7 +55,8 @@ form{
 
     .input-group{
         input{
-            border-right: 0;
+            border-top-right-radius: 35px !important;
+            border-bottom-right-radius: 35px !important;
         }
     }
 
@@ -70,5 +73,5 @@ form{
 
 .blue_cercle{
     right: 0;
-    bottom: -90px;
+    bottom: -80px;
 }
