@@ -113,3 +113,16 @@ body{
     left: 2px;
     z-index: 10;
 }
+
+.section_padding{
+    padding: 70px 20px 50px;
+}
+
+.fixedTop{
+    position: fixed;
+    width: 100%;
+    z-index: 3000;
+    padding-top: 5px !important;
+    padding-bottom: 0 !important;
+    box-shadow: -5px -12px 34px #fafafa;
+}
