@@ -1,11 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 :root{
     --primary: #ff9292;
+    --bs-primary: #ff9292;
     --secondary: #ffdd67;
     --light: #fff;
     --dark-grey:#403f3f;
+    --bs-link-color: #403f3f;
+    --bs-blue: #ff9292;
+    --bs-link-hover-color:#ff9292;
 }
+$primary:       var(--primary) !default;
+$secondary:     var(--secondary) !default;
+
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -13,7 +21,7 @@ body{
     font-size: 1rem;
     color: var(--dark-grey);
     overflow-x: hidden;
-    background-color: #fff9f4;
+    background-color: #fff9f4 !important;
 }
 
 .text--primary{
@@ -32,6 +40,54 @@ body{
     background: var(--secondary);
 }
 .font--md{
-    font-size: 1.363rem;
+    font-size: 1.225rem;
+}
 
+.form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%ff9292'/%3e%3c/svg%3e") !important;
+}
+.form-check-input:checked {
+    background-color: $primary !important;
+    border-color: var(--dark-grey) !important;
+}
+
+.form-check-input:focus {
+    border-color: #ff9292 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(255 146 146 / 25%) !important;
+}
+
+.form-check{
+    margin-bottom: 0 !important;
+}
+.form-check-input {
+    width: 0.7em !important;
+    height: 0.7em !important;
+    
+}
+
+.form-check .form-check-input{
+    margin-left: 0 !important;
+}
+
+.btn-primary{
+    border-radius: 35px !important;
+    background-color: var(--primary) !important;
+    padding: 8px 25px !important;
+    border-color: var(--primary) !important;
+    font-weight: 500 !important;
+    font-size: 1.025rem !important;
+    transition: all 0.4s;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover,.btn-primary:focus{
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+    color: var(--dark-grey) !important;
+}
+
+.btn-outline{
+    background-color: transparent !important;
+    color: var(--dark-grey) !important;
 }

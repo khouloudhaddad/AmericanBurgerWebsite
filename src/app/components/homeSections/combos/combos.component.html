@@ -1,1 +1,27 @@
-<p>combos works!</p>
+<div class="row" id="combos">
+        <div class="col-12 text-center">
+            <h2 class="text-uppercase section_heading">Combos</h2>
+        </div>
+
+        <!--cards carousel-->
+        <ngx-slick-carousel class="carousel" 
+            #slickModal="slick-carousel" 
+            [config]="slideConfig" 
+            (init)="slickInit($event)"
+            (breakpoint)="breakpoint($event)"
+           >
+            <div ngxSlickItem *ngFor="let slide of slides; let i=index" class="slide">
+                <div class="card mx-2 text-center">
+                <div class="card-body">
+                    <h5 class="card-title text-uppercase">{{slide.title}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{slide.product}}</h6>
+                                       
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary" [ngClass]="!isOdd(i)? 'btn-outline': '' ">Card link</a>
+                </div>
+                </div>
+            </div>
+        </ngx-slick-carousel>
+           
+</div>

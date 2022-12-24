@@ -1,0 +1,16 @@
+#combos{
+    .section_heading{
+        color: var(--secondary);
+        font-size: 9.375rem;
+        font-weight: 900;
+    }
+
+    .card{
+        border-radius: 25px;
+
+        .card-footer{
+            background-color: transparent;
+            border-top: none;
+        }
+    }
+}
