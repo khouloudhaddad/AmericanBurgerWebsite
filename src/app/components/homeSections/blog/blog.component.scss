@@ -40,4 +40,29 @@
             }
         }
     }
+    .footer_pink_arrow{
+        right: 35px;
+    }
+
+    .yellow_arrow{
+        bottom: 25%;
+        left: 20px;
+    }
+    .zigzag{
+        right: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .yellow_arrow, .footer_pink_arrow{
+        max-width: 70px;
+    }
+    .yellow_arrow{
+        bottom: 26% !important;
+    }
+
+    .zigzag{
+        top: 25px;
+         max-width: 40%;
+    }
 }
