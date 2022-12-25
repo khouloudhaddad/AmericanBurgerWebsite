@@ -116,7 +116,7 @@ body{
 }
 
 .section_padding{
-    padding: 70px 0 50px;
+    padding: 100px 0 100px;
 }
 
 .fixedTop{
@@ -132,6 +132,14 @@ body{
     font-weight: 900;
     text-transform: uppercase;
     font-size: 6.25rem;
+    position: relative;
+    z-index: 500;
+}
+
+@media screen and (max-width:1199px) and (min-width:992px){
+    .section_header{
+        font-size:4rem;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -153,4 +161,28 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .form-select{
     background-image: url("./assets/imgs/icons/white_caret.png");
+}
+
+.left-25{
+    left: 25%;
+}
+
+.left-65{
+    left: 65%;
+}
+
+.right-15{
+    right:15px;
+}
+
+.top-20{
+    top: -20%;
+}
+
+.z-1000{
+    z-index: 1000;
+}
+
+.bottom-20{
+    bottom: -20%;
 }
