@@ -1,0 +1,43 @@
+#blog{
+    .section_header{
+        font-size: 4.188rem;
+    }
+    .section_desc{
+            font-size: 2.313rem;
+            margin-bottom: 40px;
+    }
+
+    .card{
+        padding: 25px;
+        
+        .card-img-top{
+            box-shadow: 0px 17px 20.16px 3.84px rgb(0 0 0 / 21%);
+            border-radius: 50%;
+            margin-bottom: 25px;
+        }
+        .card-body{
+            .blog_date{
+                font-weight: 700;
+                color: #555555;
+                font-size: 0.875rem;
+                margin-bottom: 20px;
+            }
+            h5{
+                color: #4f4e4e;
+                font-weight: 700;
+                font-size: 1.025rem;
+            }
+
+            .btn-link{
+                color: var(--primary);
+                text-transform: capitalize;
+                text-decoration: none;
+                transition: all 0.4s;
+
+                &:hover, &:focus{
+                    color: var(--secondary);
+                }
+            }
+        }
+    }
+}
