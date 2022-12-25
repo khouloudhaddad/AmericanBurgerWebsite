@@ -4,8 +4,9 @@ footer{
         a{
             text-decoration: none;
              color: var(--dark-grey);
+             transition: all 0.4s;
              &:hover{
-                color: var(--primary);
+                color: var(--primary) !important;
              }
         }
         h3{
@@ -67,7 +68,7 @@ footer{
                     justify-content: center;
                     &:hover,&:focus{
                         transition: all 0.4s;
-                        color: #fff;
+                        color: #fff !important;
                     }
                 }
             }
