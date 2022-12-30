@@ -1,37 +1,49 @@
-<div class="row position-relative" id="combos"  data-aos="fade-left"
+<section class="section_padding position-relative bg--primary"  id="combos">
+    <img src="../../../../assets/imgs/shapes2_2.png" alt="Shape 2" class="img-fluid box_yellow_demi_cercle position-absolute" data-aos="fade-left"
      data-aos-easing="linear"
      data-aos-duration="1500">
-        <div class="col-12 text-center">
-            <h2 class="text-uppercase section_heading">Combos</h2>
-        </div>
+    <div class="container">
+        <div class="row"  data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="col-12 text-center">
+                    <h2 class="text-uppercase section_heading">Combos</h2>
+                    <p class="desc">We have the perfect Burger combination. <br/>Choose your best option.</p>
+                    
+                </div>
 
-        <div class="col-12">
-            <!--cards carousel-->
-        <ngx-slick-carousel class="carousel" 
-            #slickModal="slick-carousel" 
-            [config]="slideConfig" 
-            (init)="slickInit($event)"
-            (breakpoint)="breakpoint($event)"
-           >
-            <div ngxSlickItem *ngFor="let slide of slides; let i=index" class="py-5">
-                <div class="card mx-xl-5 mx-md-4 mx-3 text-center">
-                <div class="card-body">
-                    <h5 class="mb-3 card-title text-uppercase">{{slide.title}}</h5>
-                    <h6 class="card-subtitle mb-3 text-muted  text-uppercase py-2">{{slide.product}}</h6>
-                     <div class="components d-flex justify-content-center">
-                        <span  *ngFor="let item of slide.content" class="px-2 text-uppercase">{{item}}</span>
-                     </div>   
-                     <div class="pt-3 text-uppercase">{{slide.output}}</div>  
-                     
-                     <div class="text--primary pt-4">{{slide.price}}</div>
+                <div class="col-12 mt-4">
+                    <!--cards carousel-->
+                <ngx-slick-carousel class="carousel" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfig" 
+                    (init)="slickInit($event)"
+                    (breakpoint)="breakpoint($event)"
+                >
+                    <div ngxSlickItem *ngFor="let slide of slides; let i=index" class="py-5">
+                        <div class="card mx-xl-5 mx-md-4 mx-3 text-center">
+                            <div class="card-body">
+                                <h5 class="mb-3 card-title text-uppercase">{{slide.title}}</h5>
+                                <h6 class="card-subtitle mb-3 text-muted  text-uppercase py-2">{{slide.product}}</h6>
+                                <div class="components d-flex justify-content-center">
+                                    <span  *ngFor="let item of slide.content" class="px-2 text-uppercase">{{item}}</span>
+                                </div>   
+                                <div class="pt-3 text-uppercase">{{slide.output}}</div>  
+                                
+                                <div class="text--primary pt-4 price">{{slide.price}}</div>
+                            </div>
+                            
+                            <div class="card-footer pt-4 pb-3">
+                                <a href="#" class="btn btn-primary" [ngClass]=" !isOdd(i) ? 'btn-outline' : '' ">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
                 </div>
                 
-                <div class="card-footer pt-4 pb-3">
-                    <a href="#" class="btn btn-primary" [ngClass]="!isOdd(i)? 'btn-outline': '' ">Card link</a>
-                </div>
-                </div>
-            </div>
-        </ngx-slick-carousel>
         </div>
-           
-</div>
+    </div>
+    <img src="../../../../assets/imgs/shapes3_2.png" alt="Shape 2" class="img-fluid box_blue_demi_cercle position-absolute" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+</section>

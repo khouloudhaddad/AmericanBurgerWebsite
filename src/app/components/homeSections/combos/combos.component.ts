@@ -15,7 +15,7 @@ export class CombosComponent {
         "Milkshake"
       ],
       output: "New York Cheesecake",
-      price: "€00"
+      price: "€ 0 0"
      },
     { 
       title: "Combo 2",
@@ -25,7 +25,7 @@ export class CombosComponent {
         "Milkshake"
       ],
       output: "Berry Mouffin",
-      price: "€00"
+      price: "€ 0 0"
      },
     { 
       title: "Combo 3",
@@ -35,7 +35,7 @@ export class CombosComponent {
       ],
      
       output: "Sacher Cake",
-      price: "€00"
+      price: "€ 0 0"
     },
 
     {
@@ -46,14 +46,14 @@ export class CombosComponent {
         "Milkshake"
       ],
       output: "New York Cheesecake",
-      price: "€00"
+      price: "€ 0 0"
      },
     { 
       title: "Combo 5",
       product: "Cheese Burger",
       content: ["Strawberry", "Milkshake"],
       output: "Berry Mouffin",
-      price: "€00"
+      price: "€ 0 0"
      },
     { 
       title: "Combo 6",
@@ -63,7 +63,7 @@ export class CombosComponent {
         "Milkshake"
       ],
       output: "Sacher Cake",
-      price: "€00"
+      price: "€ 0 0"
     }
   ];
   slideConfig = {

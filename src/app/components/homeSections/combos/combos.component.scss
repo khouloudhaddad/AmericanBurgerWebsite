@@ -1,4 +1,13 @@
 #combos{
+    .box_yellow_demi_cercle{
+        right: 0;
+        top: -15%;
+    }
+    .box_blue_demi_cercle{
+        right: 0;
+        top: 65%;
+        z-index: 9;
+    }
     .section_heading{
         color: var(--secondary);
         font-size: 9.375rem;
@@ -6,8 +15,12 @@
         padding: 50px;
     }
 
+    .desc{
+        color: #fff;
+        font-size: 40px;
+    }
     .card{
-      
+       
         padding: 35px 10px;  
         border-radius: 40px;
         background-color: rgb(255, 249, 244);
@@ -19,11 +32,16 @@
             font-size: 19px;
         }
 
+        .price{
+            font-size: 1.3rem;
+        }
         .card-footer{
             background-color: transparent;
             border-top: none;
         }
     }
+
+    
 
 }
 
@@ -34,5 +52,8 @@
             padding: 50px 20px;
         }
     }
-    
+     .box_blue_demi_cercle{
+        max-width: 75px;
+        top: 85% !important;
+     }
 }

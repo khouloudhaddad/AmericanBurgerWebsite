@@ -10,7 +10,7 @@ export class AppComponent {
 
   ngOnInit()
   {
-    AOS.init({disable: 'mobile'});
+    AOS.init({});
     AOS.refresh();
 
     //fixed header onscroll

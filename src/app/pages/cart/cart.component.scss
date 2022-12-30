@@ -1,0 +1,38 @@
+.card-header{
+    background-color: #fff;
+}
+.form-outline {
+    position: relative;
+    .form-control.active~.form-label, .form-outline .form-control:focus~.form-label {
+    transform: translateY(-1rem) translateY(0.1rem) scale(.8);
+    }
+    .form-control~.form-notch {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    text-align: left;
+    pointer-events: none;
+}
+    .form-control~.form-label {
+    position: absolute;
+    top: 0;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    left: 0.75rem;
+    padding-top: 0.37rem;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transition: all .2s ease-out;
+    color: rgba(0,0,0,.6);
+    margin-bottom: 0;
+}
+input{
+    text-align: center;
+}
+}
